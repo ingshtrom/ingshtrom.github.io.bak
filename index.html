@@ -1,11 +1,40 @@
----
-layout: default
-title: Alex "Ingshtrom" Hokanson
-sitemap:
-  priority: 0.9
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Alex "Ingshtrom" Hokanson</title>
+    
+    <meta name="description" content="Personal interwebspace specifically designed for Mr. Hokanson.">
+    
+    <meta name="author" content="Alex Hokanson">
+    <link rel="author" href="https://plus.google.com/+AlexHokanson">
+    <link href="http://www.mysticgear.com/" rel="canonical">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="alternate" type="application/rss+xml" title="Alex Hokanson" href="http://www.mysticgear.com/feed.xml">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/assets/application-232535324dba18afe990fe141cf64867.css">
+  </head>
 
-<div class="about-blurb">
+  <body>
+  <header class="site-header" role="banner">
+      <div class="container">
+        <a href="/" class="logo"><i class="icon-cog"></i><span>Mystic Gear</span></a>
+
+        <nav role="navigiation">
+          <ul class="site-nav">
+            <li><a href="/about/">About</a>
+            <!-- <li><a href="/blog/">Blog</a> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    
+
+    <div class="site-content">
+      <div class="container">
+        <div class="about-blurb">
   <h1>Hello. I'm Alex Hokanson.</h1>
   <p>I'm a tech-enthusiast and software developer. I love <a href="http://nodejs.org/">node.js</a>, <a href="https://github.com/SeleniumHQ/selenium">selenium</a>, and <a href="https://twitter.com/search?q=%23gaming&src=typd">gaming</a>. I work for <a href="http://www.inin.com/">Interactive Intelligence</a> as an Automation Developer.</p>
 
@@ -19,12 +48,30 @@ sitemap:
 
 <hr>
 <ul class="posts">
-  {% for post in site.posts %}
-    <a href="{{ post.url }}">
+  
+    <a href="/blog/jekyll-from-start-to-finish/">
       <li>
-        <span class="posts__date">{{ post.date | date_to_string }}</span>
-        {{ post.title }}
+        <span class="posts__date">27 Apr 2014</span>
+        FStF: GitHub Pages with Jekyll and Plugins
       </li>
     </a>
-  {% endfor %}
+  
+    <a href="/blog/welcome-to-Mystic-Gear/">
+      <li>
+        <span class="posts__date">26 Apr 2014</span>
+        Welcome to Mystic Gear!
+      </li>
+    </a>
+  
 </ul>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        &copy; Alex Hokanson 2014.
+      </div>
+    </footer>
+  </body>
+</html>
