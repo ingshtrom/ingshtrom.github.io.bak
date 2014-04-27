@@ -104,42 +104,7 @@ git push origin
 
 Now we are ready for the rake bit. In the root of our repo, there is a file named "rakefile". Rake uses that file as directions on how to build our project. Here is the rakefile from [Nitrous.io][nitrous-jekyll-guide] with a few modifications to commit/publish to __master__ instead of __gh-pages__.
 
-{% highlight ruby %}
-require 'rubygems'
-require 'rake'
-require 'rdoc'
-require 'date'
-require 'yaml'
-require 'tmpdir'
-require 'jekyll'
-
-desc "Generate blog files"
-task :generate do
-  Jekyll::Site.new(Jekyll.configuration({
-    "source"      => ".",
-    "destination" => "_site"
-  })).process
-end
-
-
-desc "Generate and publish blog to master"
-task :publish => [:generate] do
-  Dir.mktmpdir do |tmp|
-    system "mv _site/* #{tmp}"
-    system "git checkout -B master"
-    system "rm -rf *"
-    system "mv #{tmp}/* ."
-    message = "Site updated at #{Time.now.utc}"
-    system "git add --all ."
-    system "git commit -m \"#{message}\""
-    system "git push origin master --force"
-    system "git checkout source"
-    system "echo yolo"
-  end
-end
-
-task :default => :publish
-{% endhighlight %}
+[https://github.com/ingshtrom/ingshtrom.github.io/blob/source/rakefile](https://github.com/ingshtrom/ingshtrom.github.io/blob/source/rakefile)
 
 Before we go running it, we need to commit the rakefile changes:
 
@@ -162,7 +127,7 @@ system "git commit -m \"#{message.shellescape}\""
 {% endhighlight %}
 (Notice the removal of the "a" flag).
 
-Now just run 
+Now just run the following in a Git Bash prompt at the root of your repo
 
 {% highlight bash %}
 rake
