@@ -1,9 +1,25 @@
-<!DOCTYPE html>
-<html>
-  <body>
-    <h1>Hello, World!</h1>
-    <h3>Alex "Ingshtrom" Hokanson</h3>
-    <h3>Created on April, 22 2014</h3>
-    <p>I'm hosted with GitHub Pages!</p>
-  </body>
-</html>
+---
+layout: default
+title: Alex "Ingshtrom" Hokanson
+sitemap:
+  priority: 0.9
+---
+
+<div class="about-blurb">
+  <h1>Hello. I'm Alex Hokanson.</h1>
+  <p>I'm a tech-enthusiast and software developer. I love <a target="_blank" href="http://nodejs.org/">node.js</a>, <a target="_blank" href="https://github.com/SeleniumHQ/selenium">selenium</a>, and <a target="_blank" href="https://twitter.com/search?q=%23gaming&src=typd">gaming</a>. I work for <a target="_blank" href="http://www.inin.com/">Interactive Intelligence</a> as an Automation Developer.</p>
+
+  <p class="about-blurb__icons">
+    <a target="_blank" rel="nofollow" href="http://github.com/ingshtrom/"><i class="icon-github"></i></a>
+    <a target="_blank" rel="nofollow" href="http://twitter.com/ingshtrom/"><i class="icon-twitter"></i></a>
+    <a target="_blank" rel="nofollow" href="https://plus.google.com/+AlexHokanson/"><i class="icon-googleplus"></i>
+    <a target="_blank" rel="nofollow" href="mailto:alex.hokanson@mysticgear.com"><i class="icon-mail"></i></a>
+  </p>
+</div>
+
+<hr>
+<ul class="posts">
+  {% for post in site.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a><span class="posts__date">{{ post.date | date_to_string }}</span></li>
+  {% endfor %}
+</ul>

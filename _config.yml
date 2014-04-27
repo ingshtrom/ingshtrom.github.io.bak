@@ -1,0 +1,6 @@
+name: Alex Hokanson
+url: http://www.mysticgear.com
+description: Personal interwebspace specifically designed for Mr. Hokanson.
+markdown: redcarpet
+pygments: true
+permalink: /blog/:title/
