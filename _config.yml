@@ -1,7 +1,0 @@
-name: Alex Hokanson
-url: http://www.mysticgear.com
-description: Personal brain-dump of Alex "Ingshtrom" Hokanson.
-markdown: redcarpet
-pygments: true
-permalink: /blog/:title/
-exclude: ['Gemfile', 'Gemfile.lock', 'rakefile', 'README.md']
