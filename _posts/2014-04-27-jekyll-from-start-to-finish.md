@@ -151,24 +151,16 @@ Congrats! You should be able to see your GitHub Page site at __username__.github
 
 [jekyll-main]: http://jekyllrb.com/
 [jekyll-templates-list]: https://github.com/jekyll/jekyll/wiki/Sites
-[jekyll-plugins-main]: http://jekyllrb.com/docs/plugins/
 [git-main]: http://git-scm.com/
 [github-main]: https://github.com/
 [github-pages-setup-guide]: https://pages.github.com/
 [ruby-setup-guide]: http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html
-[ruby-download]: http://rubyinstaller.org/downloads/
-[ruby-exact-download]: http://dl.bintray.com/oneclick/rubyinstaller/ruby-1.9.3-p545-i386-mingw32.7z?direct
-[ruby-dev-kit-download]: https://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe
 [python-2-7-3-download]: https://www.python.org/ftp/python/2.7.6/python-2.7.6.msi
-[rich-grundy-reference]: http://www.richgrundy.com/
 [rich-grundy-jekyll-template]: https://github.com/richguk/richguk.github.io
 [my-jekyll-source]: https://github.com/ingshtrom/ingshtrom.github.io
-[pygments-main]: http://pygments.org/
 [markdown-main]: http://daringfireball.net/projects/markdown/
 [git-clients]: http://git-scm.com/downloads/guis
 [github-client-windows]: https://windows.github.com/
-[ruby-lang-main]: https://www.ruby-lang.org/en/
-[ruby-gems]: http://rubygems.org/
 [custom-domain-guide]: https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages
 [nitrous-main]: https://www.nitrous.io/
 [nitrous-jekyll-guide]: http://blog.nitrous.io/2013/08/30/using-jekyll-plugins-on-github-pages.html
