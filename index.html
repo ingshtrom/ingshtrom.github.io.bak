@@ -1,83 +1,17 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Alex "Ingshtrom" Hokanson</title>
-    
-    <meta name="description" content="Personal brain-dump of Alex "Ingshtrom" Hokanson.">
-    
-    <meta name="author" content="Alex Hokanson">
-    <link rel="author" href="https://plus.google.com/+AlexHokanson">
-    <link href="http://www.mysticgear.com/" rel="canonical">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="alternate" type="application/rss+xml" title="Alex Hokanson" href="http://www.mysticgear.com/feed.xml">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/assets/application-232535324dba18afe990fe141cf64867.css">
-  </head>
+---
+layout: default
+title: Posts
+---
 
-  <body>
-  <header class="site-header" role="banner">
-      <div class="container">
-        <a href="/" class="logo"><i class="icon-cog"></i><span>Mystic Gear</span></a>
+<div>
+  {% for post in site.posts %}
+    <md-card class="padded-card post-list-item md-whiteframe-z1">
+      <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
+      <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
+      <div class="post-content clipped-content">{{ post.excerpt }}</div>
+    </md-card>
+  {% endfor %}
 
-        <nav role="navigiation">
-          <ul class="site-nav">
-            <li><a href="/about/">About</a>
-            <!-- <li><a href="/blog/">Blog</a> -->
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
-    
-
-    <div class="site-content">
-      <div class="container">
-        <div class="about-blurb">
-  <h1>Hello. I'm Alex Hokanson.</h1>
-  <p>I'm a tech-enthusiast and software developer. I love <a href="http://nodejs.org/">node.js</a>, <a href="https://github.com/SeleniumHQ/selenium">selenium</a>, and <a href="https://twitter.com/search?q=%23gaming">gaming</a>. I work for <a href="http://www.inin.com/">Interactive Intelligence</a> as a Software Engineer - Test.</p>
-
-  <p class="about-blurb__icons">
-    <a rel="nofollow" href="http://github.com/ingshtrom/"><i class="icon-github"></i></a>
-    <a rel="nofollow" href="http://twitter.com/ingshtrom/"><i class="icon-twitter"></i></a>
-    <a rel="nofollow" href="https://plus.google.com/+AlexHokanson/"><i class="icon-googleplus"></i>
-    <a rel="nofollow" href="mailto:alex.hokanson@mysticgear.com"><i class="icon-mail"></i></a>
-  </p>
 </div>
-
-<hr>
-<ul class="posts">
-  
-    <a href="/blog/do-server-setup/">
-      <li>
-        <span class="posts__date">04 May 2014</span>
-        DigitalOcean VPS Setup
-      </li>
-    </a>
-  
-    <a href="/blog/jekyll-from-start-to-finish/">
-      <li>
-        <span class="posts__date">27 Apr 2014</span>
-        FStF: GitHub Pages with Jekyll and Plugins
-      </li>
-    </a>
-  
-    <a href="/blog/welcome-to-mysticgear/">
-      <li>
-        <span class="posts__date">26 Apr 2014</span>
-        Welcome to Mystic Gear!
-      </li>
-    </a>
-  
-</ul>
-      </div>
-    </div>
-
-    <footer class="site-footer">
-      <div class="container">
-        &copy; Alex Hokanson 2014.
-      </div>
-    </footer>
-  </body>
-</html>

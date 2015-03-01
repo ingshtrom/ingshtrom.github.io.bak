@@ -1,0 +1,212 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// // Using media queries with like this:
+// // @include media-query($palm) {
+// //     .wrapper {
+// //         padding-right: $spacing-unit / 2;
+// //         padding-left: $spacing-unit / 2;
+// //     }
+// // }
+// @mixin media-query($device) {
+//   @media screen and (max-width: $device) {
+//     @content;
+//   }
+// }
+
+
+
+// // Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "syntax-highlighting"
+;
+
+html {
+  height: 100%;
+}
+
+.docs-menu-icon {
+  background: none;
+  border: none;
+  margin-right: 16px;
+  padding: 0;
+  width: 100px;
+  height: 100%;
+  padding-right: 30px;
+
+  .hamburger-menu {
+    font-size: 24px;
+    height: 24px;
+    width: 24px;
+    color: #FFF;
+  }
+}
+
+// circular image
+.circular-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+// center the image
+.personal-image {
+  margin: 50px auto;
+  background: url(/img/me.png) no-repeat;
+}
+
+.side-nav-footer {
+  position: fixed;
+  margin: 10px auto;
+  padding: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: x-small;
+}
+
+.post-list-item {
+  margin: 30px 50px;
+}
+
+.post-meta {
+  font-size: small;
+  color: grey;
+}
+
+.padded-card {
+  padding: 5px;
+}
+
+.post-title {
+  text-decoration: none;
+  color: #555555;
+  font-size: xx-large;
+  margin-bottom: 5px;
+}
+
+.social-links {
+  margin: 10px auto;
+  padding: 10px;
+  width: 100%;
+
+  .md-fab {
+    margin: 0 7px;
+  }
+}
+
+.twitter-icon md-icon {
+  margin-left: 2px;
+  margin-top: 3px;
+}
+
+.linkedin-icon md-icon {
+  margin-left: 5px;
+}
+
+.toolbar-nav-links .md-button {
+  position: relative;
+  top: 30px;
+  margin: 0 5px;
+}
+
+// .md-fab.md-button {
+//   visibility: hidden;
+
+//   -moz-animation-name: popInFab;
+//   -moz-animation-iteration-count: 1;
+//   -moz-animation-timing-function: ease-in;
+//   -moz-animation-duration: 0.3s;
+
+//   -webkit-animation-name: popInFab;
+//   -webkit-animation-iteration-count: 1;
+//   -webkit-animation-timing-function: ease-in;
+//   -webkit-animation-duration: 0.3s;
+
+//   animation-name: popInFab;
+//   animation-iteration-count: 1;
+//   animation-timing-function: ease-in;
+//   animation-duration: 0.3s;
+// }
+
+// .anim-order-1 {
+//   -moz-animation-delay: 0.5s;
+//   -webkit-animation-delay: 0.5s;
+//   animation-delay: 0.5s;
+// }
+
+// .anim-order-2 {
+//   -moz-animation-delay: 1.0s;
+//   -webkit-animation-delay: 1.0s;
+//   animation-delay: 1.0s;
+// }
+
+// .anim-order-3 {
+//   -moz-animation-delay: 1.5s;
+//   -webkit-animation-delay: 1.5s;
+//   animation-delay: 1.5s;
+// }
+
+// .anim-order-4 {
+//   -moz-animation-delay: 2.0s;
+//   -webkit-animation-delay: 2.0s;
+//   animation-delay: 2.0s;
+// }
+
+// @-moz-keyframes popInFab {
+//     0% {
+//       visibility: visible;
+//       -moz-transform: scale(0);
+//     }
+//     100% {
+//       -moz-transform: scale(1.0);
+//     }
+// }
+// @-webkit-keyframes popInFab {
+//     0% {
+//       visibility: visible;
+//       -webkit-transform: scale(0);
+//     }
+//     100% {
+//       -webkit-transform: scale(1.0);
+//     }
+// }
+// @keyframes popInFab {
+//     0% {
+//       visibility: visible;
+//       transform: scale(0);
+//     }
+//     100% {
+//       transform: scale(1.0);
+//     }
+// }

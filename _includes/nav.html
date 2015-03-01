@@ -1,0 +1,38 @@
+<md-sidenav md-component-id="left" class="md-sidenav-left md-theme-default md-whiteframe-z2" md-is-locked-open="$media('gt-md')">
+  <div ng-controller="LeftSidebarCtrl" class="side-nav-wrapper">
+    <md-toolbar>
+      <h1 class="md-toolbar-tools"><a href="/">{{ site.title }}</a></h1>
+    </md-toolbar>
+    <md-content class="md-padding" layout="column">
+      <div class="circular-image personal-image"></div>
+      <p>
+        {{ site.description }}
+      </p>
+    </md-content>
+    <footer class="side-nav-footer">
+      <section class="social-links" layout="row" layout-align="center center">
+        <md-button class="md-fab md-primary anim-order-1 github-icon" aria-label="GitHub">
+          <md-tooltip md-direction="top">GitHub</md-tooltip>
+          <md-icon md-svg-src="/img/icons/github-alt.svg"></md-icon>
+        </md-button>
+        <md-button class="md-fab md-primary anim-order-2 twitter-icon" aria-label="Twitter">
+          <md-tooltip md-direction="top">Twitter</md-tooltip> 
+          <md-icon md-svg-src="/img/icons/twitter.svg"></md-icon>
+        </md-button>
+        <md-button class="md-fab md-primary anim-order-3 linkedin-icon" aria-label="LinkedIn">
+          <md-tooltip md-direction="top">LinkedIn</md-tooltip>
+          <md-icon md-svg-src="/img/icons/linkedin.svg"></md-icon>
+        </md-button>
+        <md-button class="md-fab md-primary anim-order-4 email-icon" aria-label="Email">
+          <md-tooltip md-direction="top">Email</md-tooltip>
+          <md-icon md-svg-src="/img/icons/paper-plane-o.svg"></md-icon>
+        </md-button>
+      </section>
+      <p>
+        <a href="https://pages.github.com/">Hosted on GitHub Pages</a>
+        |
+        <a href=""http://jekyllrb.com/>Powered by Jekyll</a>
+      </p>
+    </footer>
+  </div>
+</md-sidenav>

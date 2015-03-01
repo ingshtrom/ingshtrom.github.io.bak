@@ -1,0 +1,19 @@
+<md-toolbar class="md-theme-default">
+  <div class="md-toolbar-tools" tabindex="0" ng-controller="ToolbarCtrl">
+    <button class="docs-menu-icon" hide-gt-md ng-click="openSideMenu()">
+      <md-icon md-font-icon="icon-menu" class="hamburger-menu">
+      </md-icon>
+    </button>
+    <span flex></span>
+    <section class="toolbar-nav-links">
+      <md-button class="md-fab md-accent md-hue-3" ng-click="navigate('/')">
+        <md-tooltip>Home</md-tooltip>
+        <md-icon md-svg-src="/img/icons/home.svg"></md-icon>
+      </md-button>
+      <md-button class="md-fab md-accent md-hue-3" ng-click="navigate('/about/')">
+        <md-tooltip>About Me</md-tooltip>
+        <md-icon md-svg-src="/img/icons/user.svg"></md-icon>
+      </md-button>
+    </section>
+  </div>
+</md-toolbar>
