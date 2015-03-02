@@ -10,7 +10,10 @@ angular
 })
 .controller('JekyllCtrl', ['$scope', function JekyllCtrl ($scope) {
 }])
-.controller('LeftSidebarCtrl', ['$scope', function LeftSidebarCtrl ($scope) {
+.controller('LeftSidebarCtrl', ['$scope', '$window', function LeftSidebarCtrl ($scope, $window) {
+  $scope.openExternalPage = function navigate (url) {
+    $window.open(url, '_blank');
+  };
 }])
 .controller('ToolbarCtrl', ['$scope', '$mdSidenav', '$window', function ToolbarCtrl ($scope, $mdSidenav, $window) {
 
