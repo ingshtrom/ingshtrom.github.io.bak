@@ -10,4 +10,4 @@ I have a bachelors degree in Computer Science from Manchester University. I have
 
 When I'm not coding, I like to spend time with my wife, play Destiny on PS4, and hang out in IRC rooms -- usually chatting about AngularJS and whatever else is the technology of the week.
 
-You can contact me via [Twitter](https://twitter.com/ingshtrom) or [email](mailto:alex.hokanson@mysticgear.com) and can view my projects on [GitHub](https://github.com/ingshtrom).
+You can contact me via [Twitter](https://twitter.com/ingshtrom) or [email](mailto:ingshtrom.developer@gmail.com) and can view my projects on [GitHub](https://github.com/ingshtrom).
