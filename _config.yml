@@ -17,3 +17,4 @@ highlighter: pygments
 # safe: true
 # lsi: false
 # source: your top-level directory
+theme: jekyll-theme-modernist
