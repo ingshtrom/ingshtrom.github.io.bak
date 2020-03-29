@@ -1,20 +1,12 @@
 # Site settings
 title: Alex "Ingshtrom" Hokanson
-email: alex.hokanson@mysticgear.com
+email: contact@alexhokanson.com
 description: |
   Hey! I am Alex and this site is for all the things 
   that I hold dear to my heart. I hope you enjoy it and find it useful!
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://mysticgear.com" # the base hostname & protocol for your site
+baseurl: ""
+url: "https://www.alexhokanson.com"
 twitter_username: ingshtrom
 github_username:  ingshtrom
 
-highlighter: pygments
-
-# GitHub settings
-# These will always be overriden by GitHub
-# 
-# safe: true
-# lsi: false
-# source: your top-level directory
 theme: jekyll-theme-merlot
